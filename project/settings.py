@@ -41,6 +41,13 @@ INSTALLED_APPS = [
     'core',
     'students',
     'lessons',
+<<<<<<< Updated upstream
+=======
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'drf_spectacular',
+    'attendance',
+>>>>>>> Stashed changes
 ]
 
 MIDDLEWARE = [

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 """
 URL configuration for project project.
 
@@ -23,3 +24,16 @@ urlpatterns = [
     path('', include('users.urls')),
     path('', include('students.urls')),
 ]
+=======
+from rest_framework.routers import DefaultRouter
+from students.views import StudentViewSet
+from lessons.views import LessonViewSet
+
+router = DefaultRouter()
+router.register(r"students", StudentViewSet)
+router.register(r"lessons", LessonViewSet)
+
+urlpatterns += [
+    path("api/", include(router.urls)),
+]
+>>>>>>> Stashed changes
