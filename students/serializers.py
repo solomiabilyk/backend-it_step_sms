@@ -12,7 +12,6 @@ class StudentSerializer(serializers.ModelSerializer):
             "last_name",
             "phone",
             "status",
-            "branch",
         ]
 
     def validate_phone(self, value):
